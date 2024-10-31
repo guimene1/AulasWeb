@@ -38,6 +38,7 @@ app.post('/login', (req, res) => {
     const { username, password } = req.body;
 
 
+    
     if (usuarios[username] && usuarios[username] === password) {
         req.session.isAuthenticated = true;
         req.session.username = username;
