@@ -45,7 +45,7 @@ app.post('/login', (req, res) => {
         res.cookie('loggedIn', 'true', { maxAge: 900000, httpOnly: true });
         res.redirect('/dashboard');
     } else {
-        res.render("login", { error: 'Credenciais inválidas' });
+        res.render("login", { error: '' });
     }
 });
 
