@@ -91,7 +91,7 @@
     <br>
 
     <?php
-    //php script
+    //classes Aluno e CadastroAlunos
     class Aluno
     {
         private $nome;
