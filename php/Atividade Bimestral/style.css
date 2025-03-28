@@ -1,0 +1,260 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #262626;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* Estilização do header */
+.header {
+    background-color: #1a1a1a;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #444;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.logo-placeholder {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.nav {
+    margin: 20px 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav a,
+.nav button {
+    background-color: #444;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav a:hover,
+.nav button:hover {
+    background-color: #666;
+    transform: scale(1.05);
+}
+
+/* Container principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    font-size: 17px;
+}
+
+/* Estilos dos posts */
+.post {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.post-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.jogo-info {
+    font-size: 15px;
+    color: #ccc;
+}
+
+.recomenda {
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nao-recomenda {
+    color: #E74C3C;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Formulários */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+input,
+select {
+    background-color: #333;
+    color: white;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Links Padrão */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    color: #42af42;
+}
+
+a:active {
+    transform: scale(0.95);
+}
+
+/* Links estilo botão */
+a.link-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+a.link-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+a.link-button:active {
+    transform: scale(0.95);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a,
+    .nav button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Estilização do textarea */
+textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    resize: vertical;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #66ff66;
+    outline: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    textarea {
+        min-height: 100px;
+        font-size: 14px;
+    }
+}
